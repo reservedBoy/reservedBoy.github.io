@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="/assets/preloader.css"
+      rel="stylesheet"
+    />
+    <title>Lithe Admin</title>
+    <script type="module" crossorigin src="/assets/index-CplwNeGV.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-lhHHWwHU.js">
+    <link rel="modulepreload" crossorigin href="/assets/naive-ui-D2LHS7TS.js">
+    <link rel="modulepreload" crossorigin href="/assets/dnd-kit-DWbQi7Ri.js">
+    <link rel="modulepreload" crossorigin href="/assets/axios-BV21IDAv.js">
+    <link rel="modulepreload" crossorigin href="/assets/chroma-js-DD0Ez5Q0.js">
+    <link rel="modulepreload" crossorigin href="/assets/echarts-C7nJMMmc.js">
+    <link rel="modulepreload" crossorigin href="/assets/es-toolkit-BQQ_Ab5s.js">
+    <link rel="modulepreload" crossorigin href="/assets/pinia-yAvvEG3c.js">
+    <link rel="modulepreload" crossorigin href="/assets/vue-router-BH_y0sTb.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CY-8NCbP.css">
+  </head>
+  <body>
+    <div id="appLoader">
+      <div id="clock"></div>
+    </div>
+    <div id="app"></div>
+    <script>
+      document.documentElement.classList.toggle(
+        'dark',
+        localStorage.getItem('theme-mode') === 'dark' ||
+          (!localStorage.getItem('theme-mode') &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches),
+      )
+      window.loaderElement = document.getElementById('appLoader')
+      window.loaderElement.style = `--clock-color: ${localStorage.getItem('theme-color') || '#8e51ff'}`
+    </script>
+  </body>
+</html>
